@@ -21,6 +21,7 @@
 @import url(./blocks/button/_type/button_type_submit.css);
 @import url(./blocks/button/_type/button_type_submit_inactive.css);
 @import url(./blocks/button/_type/button_type_delete.css);
+@import url(./blocks/button/_type/button_type_delete_hidden.css);
 @import url(./blocks/button/_type/button_type_avatar-edit.css);
 @import url(./blocks/elements/elements.css);
 @import url(./blocks/element/element.css);
