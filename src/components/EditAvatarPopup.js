@@ -3,26 +3,18 @@ import PopupWithForm from "./PopupWithForm";
 import {CurrentUserContext} from "../contexts/CurrentUserContext";
 
 function EditAvatarPopup(props) {
-
-    //Подписываемся на контекст
     const currentUser = useContext(CurrentUserContext);
-
-
-    // Записываем объект, возвращаемый хуком, в переменную
     const avatarRef = useRef('');
 
-    // Установка аватара пользователя
     useEffect(() => {
         avatarRef.current.value = currentUser.avatar;
     }, [currentUser])
 
 
-    // Очистка поля для ввода url аватара после закрытия popup
     useEffect(() => {
         avatarRef.current.value = '';
     }, [props.isOpen])
 
-    //Обработчик сабмита формы (обновление аватарки)
     function handleSubmit(e) {
         e.preventDefault();
         props.onUpdateAvatar({

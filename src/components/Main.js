@@ -3,7 +3,6 @@ import Card from "./Card";
 import {CurrentUserContext} from '../contexts/CurrentUserContext';
 
 function Main(props) {
-    //Подписка на контекст CurrentUserContext
     const currentUser = useContext(CurrentUserContext);
 
     return (
@@ -25,17 +24,15 @@ function Main(props) {
       </section>   
       
       <section className="cards">
-        <ul className="cards__list">
-            {props.cards.map((card) => (
-                <Card
-                    key={card._id}
-                    card={card}
-                    onClick={props.onCardClick}
-                    onCardLike={props.onCardLike}
-                    onCardDelete={props.onCardDelete}
-                />
-            ))}
-        </ul>                
+        {props.cards.map((card) => (
+            <Card
+                key={card._id}
+                card={card}
+                onClick={props.onCardClick}
+                onCardLike={props.onCardLike}
+                onCardDelete={props.onCardDelete}
+              />
+        ))}        
       </section>        
     </main>
   );
