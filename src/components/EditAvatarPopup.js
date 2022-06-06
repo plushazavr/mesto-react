@@ -4,10 +4,10 @@ import {CurrentUserContext} from "../contexts/CurrentUserContext";
 
 function EditAvatarPopup(props) {
     const currentUser = useContext(CurrentUserContext);
-    const avatarRef = useRef('');
+    const avatarRef = useRef();
 
     useEffect(() => {
-        avatarRef.current.value = currentUser.avatar;
+        avatarRef.current.value = '';
     }, [currentUser])
 
 

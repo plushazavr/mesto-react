@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import PopupWithForm from "./PopupWithForm";
 
 function AddPlacesPopup(props) {
-    const [name, setName] = useState([]);
-    const [link, setLink] = useState([]);
+    const [name, setName] = useState("");
+    const [link, setLink] = useState("");
     function handleCardName(event) {
         setName(event.target.value)
     }
