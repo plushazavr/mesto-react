@@ -4,8 +4,6 @@
 **Проектная работа по программе обучения на Я.Практикуме**
 ------
 
-[Ссылка на GitHub-pages](https://plushazavr.github.io/mesto/)
-
 ![ПРЕВЬЮ](https://github.com/plushazavr/IMG/blob/275bf3ce7fd59fd8837cc045a71f80738d8543c6/mesto_preview.gif)
 
 ## Что использовалось: 
